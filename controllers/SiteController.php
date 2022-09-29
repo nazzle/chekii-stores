@@ -126,4 +126,14 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+
+    /**
+     * Displays settings page.
+     *
+     * @return string
+     */
+    public function actionSettings()
+    {
+        return $this->render('settings');
+    }
 }

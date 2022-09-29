@@ -48,6 +48,13 @@ AppAsset::register($this);
                   </a>
                   <div class="dropdown-menu dropdown-menu-end">
                     <div class="row row-cols-3 g-3 p-3">
+                    <a class="app-link" href="<?=Url::to(['/site'])?>">
+                        <div class="col text-center">
+                          <div class="app-box mx-auto bg-gradient-lush text-white"><i class='lni lni-dashboard'></i>
+                          </div>
+                          <div class="app-title">Dashboard</div>
+                        </div>
+                      </a>
                       <a class="app-link" href="<?=Url::to(['/employee'])?>">
                         <div class="col text-center">
                           <div class="app-box mx-auto bg-gradient-cosmic text-white"><i class='bx bx-group'></i>
@@ -96,6 +103,13 @@ AppAsset::register($this);
                         </div>
                         <div class="app-title">Reports</div>
                       </div>
+                      <a class="app-link" href="<?=Url::to(['site/settings'])?>">
+                        <div class="col text-center">
+                          <div class="app-box mx-auto bg-gradient-moonlit text-white"><i class='lni lni-cogs'></i>
+                          </div>
+                          <div class="app-title">Settings</div>
+                        </div>
+                      </a>
                     </div>
                   </div>
                 </li>
@@ -191,7 +205,7 @@ AppAsset::register($this);
 
     <!--start page wrapper -->
     <div class="page-wrapper">
-      <div class="page-content">
+      <div class="page-content">        
         <?= Alert::widget() ?>
         <?= $content ?>
       </div>
